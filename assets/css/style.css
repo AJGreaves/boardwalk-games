@@ -111,7 +111,7 @@ h2 {
 }
 
 .student-discount {
-  background-color: var(--tertiary-color);
+  background-color: var(--highlight-color);
   font-weight: bold;
   color: white;
   display: block;
