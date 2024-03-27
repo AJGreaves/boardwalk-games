@@ -39,7 +39,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <!-- classes on body set to work with mt-auto on footer to 
+    ensure it always stays at the bottom of the page -->
+  <body class="d-flex flex-column min-vh-100">
     <!-- navbar -->
     <nav
       id="navbar"
@@ -188,7 +190,8 @@
     </main>
 
     <!-- footer / contact section -->
-    <footer id="contact">
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
       <div class="container mt-5 section">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
@@ -291,20 +294,24 @@
     ></script>
     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
     <script>
-      document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-          let section = document.querySelector(e.target.getAttribute('href'));
-          if (section) {
-            e.preventDefault(); // Prevent default anchor click behavior
-            let navbarHeight = document.querySelector('.navbar').offsetHeight;
-            window.scroll({
-              top: section.offsetTop - navbarHeight, // Adjust for navbar height
-              behavior: 'smooth'
-            });
-            document.querySelector('.navbar-collapse').classList.remove('show'); // Collapse navbar
-          }
+      document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+          link.addEventListener("click", function (e) {
+            let section = document.querySelector(e.target.getAttribute("href"));
+            if (section) {
+              e.preventDefault(); // Prevent default anchor click behavior
+              let navbarHeight = document.querySelector(".navbar").offsetHeight;
+              window.scroll({
+                top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                behavior: "smooth",
+              });
+              document
+                .querySelector(".navbar-collapse")
+                .classList.remove("show"); // Collapse navbar
+            }
+          });
         });
-      });
     </script>
   </body>
 </html>

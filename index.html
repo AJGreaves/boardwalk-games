@@ -39,7 +39,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <!-- classes on body set to work with mt-auto on footer to 
+    ensure it always stays at the bottom of the page -->
+  <body class="d-flex flex-column min-vh-100">
     <!-- navbar -->
     <nav
       id="navbar"
@@ -373,7 +375,8 @@
     </main>
 
     <!-- footer / contact section -->
-    <footer id="contact">
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
       <div class="container mt-5 section">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
