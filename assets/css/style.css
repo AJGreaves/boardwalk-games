@@ -100,6 +100,12 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+#services .card-footer {
+  background-color: transparent;
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
 /* events */
 
 #events .table {
