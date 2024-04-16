@@ -5,8 +5,8 @@
 :root {
   --primary-color: #3a2620; /* dark brown */
   --secondary-color: #aa9581; /* light brown */
-  --tertiary-color: #97724b; /* warm brown */
   --highlight-color: #416a8e; /* blue */
+  --highlight-color-light: #7A9FC2; /* light blue */
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Macondo", cursive;
 }
@@ -138,7 +138,7 @@ h2 {
 }
 
 #contact .sub-heading-color {
-  color: var(--secondary-color);
+  color: var(--highlight-color-light);
 }
 
 #contact .table-dark * {
@@ -146,20 +146,20 @@ h2 {
 }
 
 #contact i {
-  color: var(--tertiary-color);
+  color: var(--secondary-color); 
   font-size: 1.2rem;
   margin-right: 15px;
 }
 
 #contact .social-icons a > i {
-  color: var(--secondary-color);
+  color: var(--highlight-color-light);
   font-size: 1.9rem;
   margin-right: 15px;
   transition: all 0.3s ease-in-out;
 }
 
 #contact .social-icons a > i:hover {
-  color: var(--highlight-color);
+  color: var(--secondary-color);
 }
 
 /* game library */
