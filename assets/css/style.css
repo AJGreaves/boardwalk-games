@@ -66,6 +66,16 @@ h2 {
   color: white;
 }
 
+/* navbar */
+
+#navbar {
+  background-color: var(--primary-color);
+}
+
+#navbar .logo {
+  width: 30px;
+}
+
 #navbar .btn {
   border: 2px solid var(--highlight-color);
   background-color: var(--highlight-color);
@@ -76,16 +86,6 @@ h2 {
   color: white;
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
-}
-
-/* navbar */
-
-#navbar {
-  background-color: var(--primary-color);
-}
-
-#navbar .logo {
-  width: 30px;
 }
 
 /* header */
