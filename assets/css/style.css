@@ -166,7 +166,6 @@ h2 {
 
 #new-games .card,
 #fav-games .card {
-  margin-bottom: 1.5rem;
   /* border removed for different visual effect, 
   and also to hide that the cards can appear slightly 
   different sizes on different screen sizes */
